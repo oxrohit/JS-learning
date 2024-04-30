@@ -7,7 +7,6 @@ let num3 = true
 // console.log(typeof num4);
 
 let valueInNumber = Number(num4)
-
 // console.log(typeof valueInNumber);
 // console.log(valueInNumber);
 
@@ -28,5 +27,27 @@ let booleanUser = Boolean(isUserValid)
 // number to string
 let numb = 33
 let stringnumb = String(numb)
-console.log(stringnumb);
-console.log(typeof stringnumb);
+// console.log(typeof stringnumb);
+// console.log(stringnumb);
+
+
+
+/********************************************OPERATIONS*******************************************************************/
+
+let value = 55
+let negValue = -value
+// console.log(negValue);
+
+// BASIC OPERATIONS
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/2);
+// console.log(2%2);
+
+let str1 = "Hello "
+let str2 = "Rohit"
+let str3 = str1 + str2
+console.log(str3); 
+

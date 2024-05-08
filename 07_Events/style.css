@@ -1,0 +1,9 @@
+#dot{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    background: lightblue;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}

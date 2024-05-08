@@ -1,0 +1,20 @@
+body {
+    background-color: #212121;
+}
+
+
+
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 3rem;
+    
+}
+#time{
+    color: #fff;
+}
+

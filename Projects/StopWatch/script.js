@@ -5,6 +5,7 @@ let startTime = 0;
 let elapsedTime = 0;
 let isRunning = false;
 
+const targetTime = 103000;
 
 function start(){
 
@@ -12,7 +13,9 @@ function start(){
         startTime = Date.now() - elapsedTime;
         timer = setInterval(update, 10);
         isRunning = true;
-    }  
+    }
+
+    
 }
 
 function stop(){
@@ -20,6 +23,7 @@ function stop(){
         clearInterval(timer)
         elapsedTime =Date.now() - startTime;
         isRunning = false
+        checkWin();
     }
 }
 
@@ -46,4 +50,13 @@ function update(){
     milliseconds = String(milliseconds).padStart(2, "0");
 
     display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`
+
+    checkWin();
+}
+
+function checkWin() {
+    if (elapsedTime === targetTime) {
+        clearInterval(timer); // Stop the timer
+        alert("You Win!"); // Show win message
+    }
 }
